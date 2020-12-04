@@ -7,4 +7,4 @@ while C<3:
     n.append(float(input("Digite o preço:\n")))
 n.sort(reverse=True)
 print("O maior deles é",n[0])
-print("O menor deles é",n[2])
+print("O Mais barato é",n[2])
