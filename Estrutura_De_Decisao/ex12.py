@@ -12,7 +12,6 @@
 #        Total de descontos              : R$  165,00
 #        Salário Liquido                 : R$  935,00
 def Cal():
-   s=int(input("Digite o seu salario:\nR$"))
 print("Salário Bruto:\nR$:",s)
 if s >= 900:
     print("")
@@ -29,7 +28,8 @@ if op==1:
     v1=int(input("Digite o numeros de horas trabalhado:"))
     v2=int(input("Digite o cvalor delas:"))
     rest=v1*v2
-    s1=Cal():
+    s1=Cal(rest)
 elif op==2:
     print("Foi digitado opção(2)\nEntrar com o valor direto.")
-    s2=Cal():
+    i=int(input("Digite o seu salario:\nR$"))
+    s2=Cal(i)
