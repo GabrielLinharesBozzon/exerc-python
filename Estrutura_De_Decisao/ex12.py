@@ -12,7 +12,7 @@
 #        Total de descontos              : R$  165,00
 #        Salário Liquido                 : R$  935,00
 def Cal():
-print("Salário Bruto:\nR$:",s)
+ print("Salário Bruto:\nR$:",s)
 if s >= 900:
     print("")
 elif s >=900 and S<=1500:
