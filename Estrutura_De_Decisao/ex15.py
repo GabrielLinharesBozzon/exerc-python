@@ -5,17 +5,18 @@
 #Triângulo Isósceles: quaisquer dois lados iguais;
 #Triângulo Escaleno: três lados diferentes;
 
-L1=int(input("Digite o primeiro lado:\n"))
-L2=int(input("Digite o segundo  lado:\n"))
-L3=int(input("Digite o terciero lado:\n"))
+lado1 = input('Digite o primeiro: ')
+lado2 = input('Digite o segundo lado: ')
+lado3 = input('Digite o terceiro lado: ')
 
-if L1==L2:
-    if L2==L3:
-        if L3==L1:
-         print("Triângulo Equilátero")
+if lado1 + lado2 > lado3:
+    if lado1 == lado2 and lado1 == lado3:
+        print ('E um Triangulo equilatero')
+    elif lado1 == lado2 or lado2 == lado3 or lado1 == lado3:
+        print ('E um Triangulo isosceles')
+    elif lado1 != lado2 and lado3 or lado2 != lado1 and lado3 or lado1 != lado3:
+        print ('E um Triangulo escaleno')
 
-if(L1>=L2)or(L1<=L2):
-    if(L2>=L3)or(L2<=L3):
-        if(L3>=L1)or(L3<=L1):
-            print("Triângulo Escaleno")
+else:
+    print ('Os valores informados não formam um Triangulo')
 
